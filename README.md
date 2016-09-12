@@ -10,7 +10,7 @@ It can be formless containing collumns with different dimensions.
 - Uses percentage width for collumns calculated automaticaly.
 - Uses `inline-block` for box modeling.
 
-It's written in sass, but you can por it to whatever preprocessor you want, because it has only **25 lines of code**.
+It was written in sass, but you can por it to whatever preprocessor you want, because it has only **25 lines of code**.
 
 ## Usage
 
