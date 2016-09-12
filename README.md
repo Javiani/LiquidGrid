@@ -62,7 +62,7 @@ Output ( container with 600px )
 
 ### @include grid( n collumns, gutter width(px) )
 
-### @include col( collumns / n collumns, [ gutter width(px) ] 
+### @include col( collumns / n collumns, [ gutter width(px) ] ) 
 If gutter not defined, it will be used from grid mixin. If grid mixin does not have a gutter defined, then it will be 0px.
 
 #### Version 0.0.1
