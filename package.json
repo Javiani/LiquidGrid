@@ -1,0 +1,26 @@
+{
+  "name": "liquid-grid",
+  "version": "0.0.1",
+  "description": "A liquid grid system for non compatible flexbox browsers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Javiani/LiquidGrid.git"
+  },
+  "keywords": [
+    "sass",
+    "grid-system",
+    "layout",
+    "grid",
+    "liquid"
+  ],
+  "author": "Javiani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Javiani/LiquidGrid/issues"
+  },
+  "homepage": "https://github.com/Javiani/LiquidGrid#readme"
+}

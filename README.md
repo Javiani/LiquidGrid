@@ -1,12 +1,12 @@
 # Liquid Grid
 Flexible Grid System for browsers which doesn't support Flex Box.
 
-Liquid Grid adjust itself accordandly with the container dimensions. 
+Liquid Grid adjust itself accordandly with the container dimensions.
 It can be formless containing collumns with different dimensions.
 
 ![Liquid Grid](https://media.giphy.com/media/O0AEyXviC1vtC/giphy.gif)
 
-- Semantic & Expressive. 
+- Semantic & Expressive.
 - Uses percentage width for collumns calculated automaticaly.
 - Uses `inline-block` for box modeling.
 
@@ -36,7 +36,7 @@ Output ( container with 600px )
 
 ![grid 600px](images/800px.png)
 
-Item double size
+Item with double size
 
 ```sass
 ul {
@@ -62,12 +62,10 @@ Output ( container with 600px )
 
 ### @include grid( n collumns, gutter width(px) )
 
-### @include col( collumns / n collumns, [ gutter width(px) ] ) 
+### @include col( collumns / n collumns, [ gutter width(px) ] )
 If gutter not defined, it will be used from grid mixin. If grid mixin does not have a gutter defined, then it will be 0px.
 
 #### Version 0.0.1
 
-- Should work on IE9+ 
+- Should work on IE9+
 - Needs more tests on different devices and browsers
-
-

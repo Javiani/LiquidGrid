@@ -1,0 +1,27 @@
+@mixin grid ( $cols: 1 , $gutter: 0px ) {
+
+	$ratio : 1 / $cols;
+	$liquid-grid-cols	: $cols !global;
+	$liquid-grid-gutter	: $gutter !global;
+
+	& {
+		letter-spacing: -1ex;
+		font-size: 0;
+		margin-right: - $gutter;
+
+		> * {
+			@include col( $ratio, $gutter );
+		}
+	}
+}
+
+@mixin col( $ratio:1, $gutter :$liquid-grid-gutter ){
+
+	& {
+		margin-right: $gutter;
+		display: inline-block;
+		font-size: medium;
+		letter-spacing: normal;
+		width: calc( #{percentage( $ratio )} - #{$gutter} );
+	}
+}
