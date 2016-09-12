@@ -1,4 +1,4 @@
-# LiquidGrid
+# Liquid Grid
 Flexible Grid System for browsers which doesn't support Flex Box.
 
 Liquid Grid adjust itself accordandly with the container dimensions. 
