@@ -23,5 +23,6 @@
 		font-size: medium;
 		letter-spacing: normal;
 		width: calc( #{percentage( $ratio )} - #{$gutter} );
+		box-sizing: border-box;
 	}
 }
