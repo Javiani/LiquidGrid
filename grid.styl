@@ -4,9 +4,11 @@ $gridconfig = {
 }
 
 grid( $cols = 1 , $gutter = 0px )
+
 	$ratio = 1 / $cols
 	$gridconfig.col	= $cols
 	$gridconfig.gutter	= $gutter
+
 	&
 		letter-spacing: -1ex
 		font-size: 0
@@ -14,7 +16,7 @@ grid( $cols = 1 , $gutter = 0px )
 		> *
 			column( $ratio, $gutter )
 
-column( $ratio = 1, $gutter = $gridconfig.gutter )
+col( $ratio = 1, $gutter = $gridconfig.gutter )
 	&
 		margin-right: $gutter
 		display: inline-block
