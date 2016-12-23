@@ -1,6 +1,6 @@
 {
   "name": "liquid-grid",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "A liquid grid system for non compatible flexbox browsers",
   "main": "index.js",
   "scripts": {
