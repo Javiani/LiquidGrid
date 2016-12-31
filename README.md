@@ -27,14 +27,14 @@ ul {
 ```
 In stylus:
 ```sass
-ul {
+ul
 	grid( 3, 20px );
-	li {
+	li
 		background-color: #ededed;
 		margin-bottom: 15px;
 		padding: 0 15px;
-	}
-}
+	
+
 
 ```
 
@@ -62,17 +62,14 @@ ul {
 
 In Stylus:
 ```sass
-ul {
+ul
 	grid( 3, 20px );
-	li {
+	li
 		background-color: #ededed;
 		margin-bottom: 15px;
 		padding: 0 15px;
-		&.double {
+		&.double
 			col( 2/3 );
-		}
-	}
-}
 
 ```
 
