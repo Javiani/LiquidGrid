@@ -1,24 +1,34 @@
 # Liquid Grid
-Flexible Grid System for browsers which doesn't support Flex Box.
+Flexible and Simple Grid System.
 
-Liquid Grid adjust itself accordandly with the container dimensions.
-It can be formless containing collumns with different dimensions.
+Liquid Grid adjust itself accordandly to the container dimensions.
 
 ![Liquid Grid](https://media.giphy.com/media/O0AEyXviC1vtC/giphy.gif)
 
+- Easy.
 - Semantic & Expressive.
-- Uses percentage width for collumns calculated automaticaly.
-- Uses `inline-block` for box modeling.
-
-It was written in sass, but you can por it to whatever preprocessor you want, because it has only **25 lines of code**.
+- Inspired in [Jeet.gs](http://jeet.gs)
 
 ## Usage
 
 A grid with 3 collumns and 20px gutters:
 
+In sass:
 ```sass
 ul {
 	@include grid( 3, 20px );
+	li {
+		background-color: #ededed;
+		margin-bottom: 15px;
+		padding: 0 15px;
+	}
+}
+
+```
+In stylus:
+```sass
+ul {
+	grid( 3, 20px );
 	li {
 		background-color: #ededed;
 		margin-bottom: 15px;
@@ -32,12 +42,9 @@ Output ( container with 800px )
 
 ![grid 800px](images/800px.png)
 
-Output ( container with 600px )
+A collumn with different size:
 
-![grid 600px](images/800px.png)
-
-Item with double size
-
+In Sass:
 ```sass
 ul {
 	@include grid( 3, 20px );
@@ -53,6 +60,23 @@ ul {
 
 ```
 
+In Stylus:
+```sass
+ul {
+	grid( 3, 20px );
+	li {
+		background-color: #ededed;
+		margin-bottom: 15px;
+		padding: 0 15px;
+		&.double {
+			col( 2/3 );
+		}
+	}
+}
+
+```
+
+
 Output ( container with 600px )
 
 ![grid 600px](images/double-size.png)
@@ -60,12 +84,14 @@ Output ( container with 600px )
 
 # API
 
-### @include grid( n collumns, gutter width(px) )
+### Sass: @include grid( n collumns, gutter width(px) )
+### Stylus: grid( n collumns, gutter width(px) )
 
-### @include col( collumns / n collumns, [ gutter width(px) ] )
-If gutter not defined, it will be used from grid mixin. If grid mixin does not have a gutter defined, then it will be 0px.
+### Sass: @include col( collumns / n collumns, [ gutter width(px) ] )
+### Stylus: col( collumns / n collumns, [ gutter width(px) ] )
 
-#### Version 0.0.1
+If gutter is not passed in .col(), it will inherit from .grid() gutter's value ( default = 0 ).
+
+#### Version 0.1.1
 
 - Should work on IE9+
-- Needs more tests on different devices and browsers
